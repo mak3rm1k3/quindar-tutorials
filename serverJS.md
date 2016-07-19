@@ -23,11 +23,11 @@ app.listen(securePort, function() {
 ```
 The previous code executes the following scripts in order:
 
-	1. Imports express, one of the dependencies you installed from package.json. Express is what allows us to create and run our server. It is a native module to NodeJS.
-	1. Establishes our “app” to be the operable express module. Essentially renaming express to app for ease of read and use.
-	1. Defines a handler function that will take requests and respond to them accordingly. This is the interaction point of our server for information to and from our webapp. For example, when you click, that information is sent to the handler function which sends it to the appropriate code (index.html) to await a response and send that back to the webapp.
-	1. Writes to the user environment object a variable named SECUREPORT with the value 3001. The user environment object is called and written to via process.env (env is environment) and is a collection of information on the user. We could hard code the port number into a variable and just use that instead of writing it to the user environment, but it is in our FOSS guidelines to operate according to the above code.
-	1. Activates the port we specified via the securePort address (think of it as a pier number in a shipyard, a literal port) to listen for activity on that port. The activity will be passed to the handler function and travel down the operation line outlined above.
+1. Imports express, one of the dependencies you installed from package.json. Express is what allows us to create and run our server. It is a native module to NodeJS.
+1. Establishes our “app” to be the operable express module. Essentially renaming express to app for ease of read and use.
+1. Defines a handler function that will take requests and respond to them accordingly. This is the interaction point of our server for information to and from our webapp. For example, when you click, that information is sent to the handler function which sends it to the appropriate code (index.html) to await a response and send that back to the webapp.
+1. Writes to the user environment object a variable named SECUREPORT with the value 3001. The user environment object is called and written to via process.env (env is environment) and is a collection of information on the user. We could hard code the port number into a variable and just use that instead of writing it to the user environment, but it is in our FOSS guidelines to operate according to the above code.
+1. Activates the port we specified via the securePort address (think of it as a pier number in a shipyard, a literal port) to listen for activity on that port. The activity will be passed to the handler function and travel down the operation line outlined above.
 
 You should be able to initiate the server now, and see your webapp at http://localhost:3001 as if it were a real website:
 ```
