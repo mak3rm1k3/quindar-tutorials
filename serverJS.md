@@ -35,15 +35,3 @@ $ nodemon server.js  //Note: ‘node’ and ‘nodemon’ commands operate the s
 ```
 ###Next Steps
 Now that you have the server up and running, go to the next tutorial to see how we can incorporate more NodeJS modules into our code to make it more robust.
-
-
- 
-The final component of a basic Audacy app is the readme.sh file which often outlines purpose, installation instructions, troubleshooting guides, and use case examples.
-
-With that you have created am Audacy-grade web app in your folder temp and could create a new project in the AudacyDevOps github page and push to your very own master branch.
-
-If you make apps that call APIs or carry sensitive information, you should consult the FOSS Guidelines to reference protocol with such information.
-
-Similarly if you want to add css styling to your app, see app/styles/ in any of the existing quandary apps.
-
-Congrats on creating your first app and welcome to the Audacy Dev Ops team!
