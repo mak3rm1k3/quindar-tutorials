@@ -22,6 +22,7 @@ app.listen(securePort, function() {
 });
 ```
 The previous code executes the following scripts in order:
+
 	1. Imports express, one of the dependencies you installed from package.json. Express is what allows us to create and run our server. It is a native module to NodeJS.
 	1. Establishes our “app” to be the operable express module. Essentially renaming express to app for ease of read and use.
 	1. Defines a handler function that will take requests and respond to them accordingly. This is the interaction point of our server for information to and from our webapp. For example, when you click, that information is sent to the handler function which sends it to the appropriate code (index.html) to await a response and send that back to the webapp.
