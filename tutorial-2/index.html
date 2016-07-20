@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <body>
+    <script src= "app/controllers/listController.js"></script>
+    <div ng-app="myShoppingList" ng-controller="myCtrl">
+      <ul>
+        <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">×</span></li>
+      </ul>
+      <input ng-model="addMe">
+      <button ng-click="addItem()">Add</button>
+    </div>
+    <p>Click the little x to remove an item from the shopping list.</p>
+  </body>
+</html>
